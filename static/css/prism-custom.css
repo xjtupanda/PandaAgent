@@ -1,0 +1,63 @@
+/* static/css/prism-custom.css */
+
+.code-container pre[class*="language-"] {
+    background: #2d2d2d !important;
+    color: #f8f8f2 !important;
+}
+
+.code-container code[class*="language-"] {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+.code-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #444;
+    user-select: none;
+}
+
+.line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    pre[class*="language-"].line-numbers {
+        padding-left: 2.8em;
+    }
+
+    .line-numbers .line-numbers-rows {
+        left: -2.8em;
+        width: 2em;
+    }
+}

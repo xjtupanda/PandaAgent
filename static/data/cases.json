@@ -1,0 +1,454 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "title": "Geometric QA",
+      "description": "No code generation",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case1-1.png",
+            "width": 224
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "Elucidate the elements visible in the diagram."
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "The image provided is clear, with sufficient resolution and contrast to analyze its elements. The diagram shows a geometric figure consisting of a triangle ( triangle ABC ) with a point ( D ) on side ( BC ). A line segment ( AD ) is drawn from vertex ( A ) to point ( D ), and another line segment ( BE ) extends from vertex ( B ) to a point ( E ) outside the triangle. The elements visible in the diagram include:\n\n1. Triangle ( triangle ABC ).\n2. Point ( D ) on side ( BC ).\n3. Line segment ( AD ) connecting vertex ( A ) to point ( D ).\n4. Line segment ( BE ) extending from vertex ( B ) to point ( E ) outside the triangle.\n\nThe image is simple and does not require further processing to identify and describe the elements. Therefore, no additional image processing is necessary.",
+            "round": 1
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "The diagram consists of a triangle ABC with vertices A, B, and C. Point D lies on the line segment BC, and point E lies on the extension of line segment BA. Line segment DE is parallel to line segment AC."
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Geometric Calculation",
+      "description": "Code: Arithmetics Calculation",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case8-1.png",
+            "width": 224
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "As shown in the figure, the vertex O of quadrilateral OABC is the origin of the coordinate system. With O as the center of similarity, quadrilateral OA1B1C1 is similar to quadrilateral OABC. If A(6,0) corresponds to A1(4,0), and the area of quadrilateral OABC is 27, then the area of quadrilateral OA1B1C1 is."
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "To solve this problem, we need to understand the concept of similarity and how it affects the scale of areas.\n\n1. **Similarity and Scale Factor**:\n   - The problem states that quadrilateral OA1B1C1 is similar to quadrilateral OABC, with O as the center of similarity.\n   - Similar figures have corresponding sides in proportion. The scale factor (k) is the ratio of the lengths of corresponding sides.\n\n2. **Finding the Scale Factor**:\n   - In the given coordinate system, A(6, 0) corresponds to A1(4, 0).\n   - The coordinate (6, 0) has been scaled to (4, 0). Since these are on the x-axis, the scaling only affects the x-coordinate.\n   - The scale factor, k, is given by the ratio of the coordinates:",
+            "round": 1
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "# Calculate the scale factor\nk_numerator = 4\nk_denominator = 6\nk = k_numerator / k_denominator\nprint(k)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "title": "Calculation Results",
+            "results": [
+              {
+                "value": "0.6666666666666666"
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "So, ( k = \\frac{4}{6} = \\frac{2}{3} ).\n\n3. **Effect of Scale Factor on Area**:\n   - The area of a figure that is scaled by a factor of k is scaled by ( k^2 ).\n   - This means the area of OA1B1C1 is ( k^2 \\times ) (area of OABC).\n\n4. **Calculate the New Area**:\n   - We know the area of OABC is 27.\n   - Therefore, the area of OA1B1C1 will be:",
+            "round": 2
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "# Calculate the new area\nk_numerator = 2\nk_denominator = 3\nk = k_numerator / k_denominator\noriginal_area = 27\nnew_area = (k**2) * original_area\nprint(new_area)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "title": "Calculation Results",
+            "results": [
+              {
+                "value": "12.0"
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "\\frac{2}{3} \\right)^2 \\times 27 = \\frac{4}{9} \\times 27 = 12\nThus, the area of quadrilateral OA1B1C1 is 12.",
+            "round": 3
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "12"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Real-World Thyme Data",
+      "description": "Code: Image Cropping",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case3-1.png",
+            "width": 550
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "In figure (f), what does the parameter ( \\rho ) likely indicate? The choices are listed below:\nA. The resilience of the network to attacks\nB. The robustness of the network to disturbances\nC. The resistance of the network to noise\nD. The autocorrelation function of the network dynamics\nE. The radius of the neighborhood in which nodes interact"
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "To address the question regarding the parameter ( \\rho ) in figure (f), we need to examine the context and the graphical representation provided. Given the network terminology and the choices, I need to:\n\n1. Analyze the visual elements in figure (f)\n2. Consider what parameter \\rho typically represents in network contexts\n3. Look for clues in the graph's axes and patterns",
+            "round": 1
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "import cv2\nimport numpy as np\nimport os\nimport random\n\n# Load the image\nimage_path = \"static/images/case3-1.png\"\nimage = cv2.imread(image_path)\n\n# Focus on figure (f) - bottom right\nheight, width = image.shape[:2]\ncrop_f = image[int(height*0.5):, int(width*0.5):]\n\n# Save the cropped image\noutput_path = \"static/images/case3-2.png\"\ncv2.imwrite(output_path, crop_f)\n\nprint(f\"Cropped figure (f) saved to {output_path}\")"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case3-2.png",
+                "width": 300,
+                "caption": "Sub-image cropped from the original image - Figure (f)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "In figure (f), the parameter ( \\rho ) is located on the horizontal axis where there is a noticeable peak or prominent feature in the curve. The graph shows what appears to be an autocorrelation function, with \\( \\rho \\) representing the lag or correlation distance.\n\nThe curve starts at a high value when ( \\rho = 0 ) and decays as ( \\rho ) increases, which is characteristic of an autocorrelation function. This pattern indicates how the correlation between network states decreases with increasing time lag or distance.",
+            "round": 2
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "D"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Perceive Non-standard Image",
+      "description": "Code: Image Rotation",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case6-1.png",
+            "width": 448
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "What is the value of Oklahoma?"
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "The text in the image appears to be slanted and difficult to read in its current orientation. I believe rotating the image by a specific angle will help align the text properly and make it easier to interpret. Let me proceed with the rotation to improve clarity.",
+            "round": 1
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "import cv2\nimport numpy as np\nimport os\nfrom uuid import uuid4\n\n# Load the image\nimage_path = \"/mnt/data/temp_processed_images/cauldron_mapqa_images_mapqa_00027646.png_rotated_image_80.png\"\nimage = cv2.imread(image_path)\n\n# Define the rotation angle\nangle = -80  # Negative angle to rotate clockwise\n\n# Get image dimensions\nheight, width = image.shape[:2]\n\n# Calculate the rotation matrix\nrotation_matrix = cv2.getRotationMatrix2D((width / 2, height / 2), angle, 1)\n\n# Perform the rotation\nrotated_image = cv2.warpAffine(image, rotation_matrix, (width, height))\n\n# Save the rotated image with a random suffix\nrandom_suffix = str(uuid4())[:8]\nprocessed_filename = f\"cauldron_mapqa_images_mapqa_00027646.png_rotated_image_80_{random_suffix}.png\"\nprocessed_path = os.path.join(\"/mnt/data/temp_processed_images/\", processed_filename)\ncv2.imwrite(processed_path, rotated_image)\n\n# Print the saved image path\nprint(processed_path)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case6-2.png",
+                "width": 300
+              }
+            ]
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Image Quality Enhancement",
+      "description": "Code: Low-constrast Enhancement",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case7-1.png",
+            "width": 448
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "Convert the handwriting in this image to text."
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "The image appears to have low contrast, which may lead to poor text extraction in OCR. Enhancing the contrast will make the text stand out more clearly from the background, improving readability and OCR performance. Therefore, adjusting the contrast is necessary to improve the quality of the extracted text.\n\nHere is the Python code to enhance the image contrast:",
+            "round": 1
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "import os\nimport uuid\nfrom PIL import Image, ImageEnhance\n\n# Load the image\nimage_path = \"/mnt/data/llava_ov_data/img/f82363742380201d0848d51ce208b201.png\"\nimage = Image.open(image_path)\n\n# Enhance the contrast\nenhancer = ImageEnhance.Contrast(image)\nenhanced_image = enhancer.enhance(2.0)  # Increase contrast by a factor of 2\n\n# Save the enhanced image with a random suffix\nrandom_suffix = str(uuid.uuid4())[:8]\nfilename, ext = os.path.splitext(os.path.basename(image_path))\nprocessed_filename = f\"{filename}_{random_suffix}{ext}\"\nprocessed_path = os.path.join(\"/mnt/data/temp_processed_images/\", processed_filename)\nenhanced_image.save(processed_path)\n\n# Print the path of the saved enhanced image\nprint(processed_path)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case7-2.png",
+                "width": 448
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "Upon examining the image, the text appears somewhat faint and may not be easily readable due to low contrast. To improve clarity, enhancing the contrast of the image would make the text stand out more prominently against the background. After applying such enhancements, the text becomes more legible, allowing for accurate extraction of the words inscribed in the image.",
+            "round": 2
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "The words inscribed in the image are: \"No, but I mean-\""
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Multi Step Reasoning: Case 1",
+      "description": "Self-correction",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case9-1.png",
+            "width": 672
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "Is the person holding the plate or just the pizza cutter?"
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "To accurately determine whether the person is holding the plate or just the pizza cutter, it's essential to focus on the specific area of the image where the hands and objects are located. Cropping and zooming will help isolate these elements, making it easier to analyze the interaction between the hands and the objects.\n\nThe goal is to closely examine the hands and the objects they are interacting with. By cropping the region around the hands and the objects, we can enhance the visibility and focus on the relevant details.",
+            "round": 1
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "import cv2\nimport os\nimport random\n\n# Load the image\nimage_path = \"/mnt/data/llava_sft/coco2017/train2017/000000101766.jpg\"\nimage = cv2.imread(image_path)\n\n# Initial crop based on the inferred coordinates around the hands and objects\nx1, y1, x2, y2 = 407, 50, 617, 120\ncropped_image = image[y1:y2, x1:x2]\n\n# Save the cropped image with a random suffix\nrandom_suffix = random.randint(1000, 9999)\nfilename, ext = os.path.splitext(os.path.basename(image_path))\nprocessed_path = f\"/mnt/data/temp_processed_images/{filename}_{random_suffix}{ext}\"\ncv2.imwrite(processed_path, cropped_image)\n\n# Print the path of the saved cropped image\nprint(processed_path)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case9-2.png",
+                "width": 448
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "Upon reviewing the cropped image, it appears that the initial crop does not effectively capture the interaction between the hands and the objects. The cropped area seems to focus more on the upper part of the image, which does not include the plate or the pizza cutter. Therefore, a new set of coordinates is required to properly capture the hands and the objects they are interacting with.\n\nTo address this, let's refine the crop using the inferred coordinates that better encompass the hands and the objects. This will help us determine if the person is holding the plate or just the pizza cutter.",
+            "round": 2
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "# Load the image again\nimage = cv2.imread(image_path)\n\n# Refine the crop based on the inferred coordinates around the hands and objects\nx1, y1, x2, y2 = 142, 159, 450, 327\ncropped_image = image[y1:y2, x1:x2]\n\n# Save the refined cropped image with a new random suffix\nrandom_suffix = random.randint(1000, 9999)\nfilename, ext = os.path.splitext(os.path.basename(image_path))\nprocessed_path = f\"/mnt/data/temp_processed_images/{filename}_{random_suffix}{ext}\"\ncv2.imwrite(processed_path, cropped_image)\n\n# Print the path of the saved refined cropped image\nprint(processed_path)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case9-3.png",
+                "width": 448
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "After analyzing the refined cropped image, it is clear that the person is not holding the plate. The hands are positioned in a way that suggests they are using the pizza cutter to slice the pizza. The plate is stationary, and the person's hand is interacting with the pizza cutter, indicating that they are focused on cutting the pizza rather than holding the plate. Therefore, the person is holding just the pizza cutter.",
+            "round": 3
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "The person is holding both the pizza cutter and the plate with the pizza on it."
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Multi Step Reasoning: Case 2",
+      "description": "Further Enhancement",
+      "sections": [
+        {
+          "type": "image",
+          "data": {
+            "src": "static/images/case10-1.png",
+            "width": 560
+          }
+        },
+        {
+          "type": "question",
+          "data": {
+            "text": "Does the helmet to the left of the horse look black or white?"
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "To determine the color of the helmet to the left of the horse, we need to focus on the specific area of the image where the helmet is located. Cropping and zooming are essential because they help isolate the helmet from other elements in the image, making it easier to discern its color.\n\n### Step 1: Initial Cropping\n\nThe goal is to zoom in on the area around the helmet. The first crop will encompass a larger region that includes the helmet and some surrounding elements. This will help us get a closer look at the helmet while retaining some context.",
+            "round": 1
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "import cv2\nimport os\nimport numpy as np\nfrom uuid import uuid4\n\n# Load the image\nimage_path = \"/mnt/data/llava_sft/gqa/images/2326225.jpg\"\nimage = cv2.imread(image_path)\n\n# Perform the initial crop\ncropped_image = image[114:290, 0:218]\n\n# Save the cropped image with a random suffix\ntemp_dir = \"/mnt/data/temp_processed_images/\"\nrandom_suffix = str(uuid4())[:8]\nprocessed_filename = f\"cropped_{random_suffix}.jpg\"\nprocessed_path = os.path.join(temp_dir, processed_filename)\ncv2.imwrite(processed_path, cropped_image)\n\n# Print the path of the saved cropped image\nprint(processed_path)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case10-2.png",
+                "width": 448
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "### Step 2: Analysis of the Initial Crop\n\nAfter the initial crop, the helmet is visible, but it is not the sole focus of the image. There are still other elements, such as the horse and parts of the cart, that could distract from analyzing the helmet's color. Therefore, a more focused crop is necessary.\n\n### Step 3: Further Cropping\n\nTo get a clearer view of the helmet, we will perform a second crop that focuses solely on the helmet. This will eliminate any distractions and make it easier to determine its color.",
+            "round": 2
+          }
+        },
+        {
+          "type": "code",
+          "data": {
+            "language": "python",
+            "code": "# Load the initially cropped image\ninitial_cropped_path = processed_path\ninitial_cropped_image = cv2.imread(initial_cropped_path)\n\n# Perform the second, more focused crop on the helmet\nfocused_cropped_image = initial_cropped_image[72:105, 71:117]\n\n# Save the focused cropped image with a new random suffix\nfocused_filename = f\"focused_cropped_{random_suffix}.jpg\"\nfocused_path = os.path.join(temp_dir, focused_filename)\ncv2.imwrite(focused_path, focused_cropped_image)\n\n# Print the path of the focused cropped image\nprint(focused_path)"
+          }
+        },
+        {
+          "type": "generated_images",
+          "data": {
+            "images": [
+              {
+                "src": "static/images/case10-3.png",
+                "width": 448
+              }
+            ]
+          }
+        },
+        {
+          "type": "thinking",
+          "data": {
+            "text": "### Step 4: Final Analysis\n\nAfter the second crop, the helmet is now the central focus of the image. Observing the focused cropped image, the helmet appears to be white. The white color is distinct and contrasts with the darker elements surrounding it, confirming that the helmet to the left of the horse is indeed white.",
+            "round": 3
+          }
+        },
+        {
+          "type": "answer",
+          "data": {
+            "text": "The helmet to the left of the horse appears to be white."
+          }
+        }
+      ]
+    }
+  ]
+}
